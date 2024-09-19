@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: linear-gradient(rgb(41, 41, 41) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(41, 41, 41) 1px, transparent 1px);
+    background-size: 90px 70px;
+}
+
+nav li:hover {
+    color: orange;
+    border-bottom: 2px solid orange;
+    transition: 0.1s ease-in-out;
+}
+
+.heroSection button:hover {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+    transition: 0.2s ease-in-out;
+}
+
+.services {
+    width: 100%;
+    height: 500px;
+}
+
+.footer {
+    width: 100%;
+    margin-bottom: 12rem;
+}
+
+
+@media (max-width: 1153px) {
+    .nav {
+        width: 90vw;
+        font-size: 12px;
+        gap: 6vw;
+    }
+
+    .heroLogo {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 815px) {
+    .nav {
+        gap: 4vw;
+    }
+
+    footer {
+        padding: 7vw;
+    }
+
+    footer .contact {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 776px) {
+    .services {
+        height: auto;
+        padding: 10vw;
+    }
+
+    .projects button {
+        font-size: 3vw;
+    }
+
+    .projects h1 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 680px) {
+    .hambarger {
+        display: flex;
+        position: relative;
+    }
+
+    .nav .open{
+        flex-direction: column;
+        gap: 5px;
+        color: rgb(172, 172, 172);
+        background-color: black;
+    }
+
+    .nav .heroLogo {
+        position: relative;
+    }
+
+    .nav li {
+        display: none;
+        font-size: 2.5vw;
+        position: relative;
+    }
+
+    .liBt {
+        flex-direction: column;
+        gap: 4px;
+        position: relative;
+    }
+
+
+    .heroSection .heroMain {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2vw;
+    }
+
+    .heroSection .heroMain img {
+        width: 47vw;
+        left: 2vw;
+    }
+
+    .heroSection .heroMain h1 {
+        font-size: 7vw;
+    }
+
+    footer .socials {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .hambarger {
+        top: -6rem;
+        left: -4rem;
+    }
+
+    .heroSection {
+        padding-top: 6vw;
+    }
+
+    .heroSection .pUpper {
+        font-size: 5vw;
+    }
+
+    .services {
+        padding-bottom: 28vw;
+    }
+
+    .projects .card {
+        align-items: center;
+    }
+
+    .projects .card h3 {
+        text-align: center;
+    }
+
+    footer .left {
+        align-items: center;
+        position: relative;
+        left: -6vw;
+    }
+
+    footer .right img {
+        position: relative;
+        left: 26vw;
+    }
+
+    footer .contact {
+        align-items: center;
+    }
+
+    footer .left h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    footer .left p {
+        width: 42vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    footer .footerCon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .socials .socialLinks {
+        margin-top: 5vw;
+        position: relative;
+        left: 16vw;
+        flex-wrap: wrap;
+    }
+
+    footer .socials .socialLinks li {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 440px) {
+    .nav {
+        position: relative;
+        left: 6vw;
+    }
+
+    .heroSection .pUpper {
+        width: 75vw;
+        text-align: center;
+    }
+
+    .projects h1 {
+        font-size: 5vw;
+    }
+
+    .projects .projectBtn button {
+        font-size: 2vw;
+        padding: 0 2vw;
+    }
+}
+
+@media (max-width: 340px) {
+    .heroSection .heroButton {
+        flex-direction: column;
+    }
+}
